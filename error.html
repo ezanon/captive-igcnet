@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IGc USP :: Acesso à igcnet</title>
+
+<link rel="stylesheet" href="captiveportal-bootstrap.min.css" >
+
+<script src="captiveportal-jquery-3.3.1.slim.min.js" ></script>
+<script src="captiveportal-popper.min.js" ></script>
+<script src="captiveportal-bootstrap.min.js" ></script>
+
+</head>
+
+<body>
+
+<center>
+    
+<div class="container">
+
+<img src="captiveportal-logoigc.png" class="img-fluid"/>
+
+<div class="jumbotron">
+  <strong>### $PORTAL_MESSAGE$ ###</strong>
+</div>
+
+
+<div class="jumbotron">
+    <form method="post" action="index.php">
+        <h3>Acesso com Voucher</h3>
+        <p><em>Type your Voucher</em></p>
+        <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Voucher</span>
+            </div>
+            <input name="auth_voucher" type="text" class="form-control"/>
+            <input name="redirurl" type="hidden" value="https://google.com"/>
+            <input name="zone" type="hidden" value="wifi">
+            <input name="accept" type="submit" value="Continue"/>
+        </div>
+    </form>
+</div>
+
+<div class="jumbotron">
+<form method="post" action="index.php">
+    
+    <h4>Comunidade IGc Autorizada</h4>
+    
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Username</span>
+        </div>
+        <input name="auth_user" type="text" class="form-control">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Password</span>
+        </div>
+        <input name="auth_pass" type="password" class="form-control">
+        <input name="redirurl" type="hidden" value="https://google.com"/>
+        <input name="zone" type="hidden" value="wifi">
+        <input name="accept" type="submit" value="Continue"/>
+    </div>    
+   
+</form>
+</div>
+
+</div>
+
+</center>
+
+</body>
+</html>
